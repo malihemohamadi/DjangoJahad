@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %}
+Home
+{% endblock %}
+{% block content %}
+
+
+    <h1>hello user....</h1>
+    {% for a in todo %}
+        <a href="/detail/{{ a.id }}">{{ a.title }}</a><br/>
+    {% endfor %}
+
+{% endblock %}
+
