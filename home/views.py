@@ -15,7 +15,7 @@ def details(request,todo_id):
 
 def delete(request,todo_id):
     ToDo.objects.get(id=todo_id).delete()
-    messages.success(request,"delete this item successfully","success")
+    messages.success(request,"this is test","success")
     return redirect('home')
 
 
